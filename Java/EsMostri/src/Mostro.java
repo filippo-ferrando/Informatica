@@ -7,6 +7,7 @@ public class Mostro {
     private final int VITA_MIN = 0;
     private final int FORZA_MAX = 10;
     private final int FORZA_MIN = 5;
+
     //metodi
     public void setVita(int vita){
         if(vita >=VITA_MIN && vita <= VITA_MAX){
@@ -41,9 +42,38 @@ public class Mostro {
         vita = VITA_MAX / 2;
         forza = FORZA_MIN;
     }
+
+    public Mostro(String nome, int vita){
+        setNome(nome);
+        setVita(vita);
+    }
+
+    public Mostro(int vita, int forza){
+        setVita(vita);
+        setForza(forza);
+    }
+
+    public Mostro(int forza, String nome){
+        setNome(nome);
+        setForza(forza);
+    }
+
+    public Mostro(String nome, int vita, int forza){
+        setNome(nome);
+        setVita(vita);
+        setForza(forza);
+    }
+
+    public Mostro(String nome){
+        setNome(nome);
+    }
+
+
+
     public void visStato(){
-        System.out.println("nome= "+getNome());
-        System.out.println("vita= "+getVita()+"%");
-        System.out.println("forza= "+getForza());
+        System.out.println("nome = "+getNome());
+        System.out.println("vita = "+getVita()+"%");
+        System.out.println("forza = "+getForza());
+        System.out.println();
     }
 }
