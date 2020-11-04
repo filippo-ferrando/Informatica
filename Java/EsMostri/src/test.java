@@ -35,5 +35,17 @@ public class test {
         m6.setVita(6);
         m6.setForza(8);
         m6.visStato();
+
+        do{
+            m1.combattiCon(m2);
+
+            System.out.println(m1.toString()+"\n");
+            System.out.println(m2.toString()+"\n");
+        }while(m1.getVita() >0 && m2.getVita() >0);
+        if(m1.getVita()<=0){
+            System.out.println("giocatore 2 VINCE");
+        }else{
+            System.out.println("giocatore 1 VINCE");
+        }
     }
 }

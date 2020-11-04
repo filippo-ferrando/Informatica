@@ -68,6 +68,31 @@ public class Mostro {
         setNome(nome);
     }
 
+    public String toString(){
+        return (nome + "\nvita = "+ vita + "\nforza = "+forza);
+    }
+
+    public void combattiCon(Mostro m) {
+        int lancio1, lancio2;
+        do {
+            lancio1 = (int) (Math.random() * 6) + 1;
+            lancio2 = (int) (Math.random() * 6) + 1;
+            //System.out.println("1 = "+lancio1 + ". 2 ="+ lancio2);
+        } while (lancio2 == lancio1);
+        if (lancio1 > lancio2) {
+            int vitaM = m.getVita();
+            if ((vitaM - this.forza) >= 0)
+                m.setVita(m.getVita() - this.getForza());
+            else
+                m.setVita(0);
+        } else {
+            if ((this.vita - m.getForza()) > 0)
+                this.vita = this.vita - m.getForza();
+            else
+                this.vita = 0;
+        }
+    }
+
 
 
     public void visStato(){
