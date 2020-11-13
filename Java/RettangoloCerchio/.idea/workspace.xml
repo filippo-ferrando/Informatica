@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17fca9e9-d859-4749-ad7e-81fb877cb084" name="Default Changelist" comment="" />
+    <list default="true" id="51fc9e61-bf67-417f-8ed7-330a7eedb831" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1juPefmPqDDpghU0etJaESsVxNy" />
+  <component name="ProjectId" id="1k8oqlQa4uCr0m1WEeBb2s4y7Zk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,11 +47,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17fca9e9-d859-4749-ad7e-81fb877cb084" name="Default Changelist" comment="" />
-      <created>1604651101345</created>
+      <changelist id="51fc9e61-bf67-417f-8ed7-330a7eedb831" name="Default Changelist" comment="" />
+      <created>1605091773898</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604651101345</updated>
+      <updated>1605091773898</updated>
     </task>
     <servers />
   </component>
@@ -68,9 +68,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="182" y="50" key="new project wizard" timestamp="1605091693849">
+    <state x="182" y="50" key="new project wizard" timestamp="1605261664758">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="182" y="50" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605091693849" />
+    <state x="182" y="50" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605261664758" />
   </component>
 </project>
