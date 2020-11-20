@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4573e73-939c-4fce-8e17-af1e0860e561" name="Default Changelist" comment="" />
+    <list default="true" id="5e0b1ea2-f959-453e-a3ca-a50a49d3f994" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1kENCiGI63Zh0PHMeb80hcwQi9l" />
+  <component name="ProjectId" id="1kYUc3Nrn79zeKww0UQiu4sAqdt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,16 +43,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Macchine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4573e73-939c-4fce-8e17-af1e0860e561" name="Default Changelist" comment="" />
-      <created>1605261667936</created>
+      <changelist id="5e0b1ea2-f959-453e-a3ca-a50a49d3f994" name="Default Changelist" comment="" />
+      <created>1605877097350</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605261667936</updated>
+      <updated>1605877097350</updated>
     </task>
     <servers />
   </component>
@@ -66,12 +79,27 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="100" key="new project wizard" timestamp="1605877094862">
+    <state width="1557" height="104" key="GridCell.Tab.0.bottom" timestamp="1605883085407">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="0" y="100" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605877094862" />
+    <state width="1557" height="104" key="GridCell.Tab.0.bottom/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605883085407" />
+    <state width="1557" height="104" key="GridCell.Tab.0.center" timestamp="1605883085406">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="104" key="GridCell.Tab.0.center/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605883085406" />
+    <state width="1557" height="104" key="GridCell.Tab.0.left" timestamp="1605883085406">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="104" key="GridCell.Tab.0.left/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605883085406" />
+    <state width="1557" height="104" key="GridCell.Tab.0.right" timestamp="1605883085406">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="104" key="GridCell.Tab.0.right/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605883085406" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1605881714620">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605881714620" />
   </component>
 </project>

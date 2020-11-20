@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4573e73-939c-4fce-8e17-af1e0860e561" name="Default Changelist" comment="" />
+    <list default="true" id="94f70190-53fb-4933-a750-e2e9423eded1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1kENCiGI63Zh0PHMeb80hcwQi9l" />
+  <component name="ProjectId" id="1kEQdeB7jR7e2hxlRD4woxbYQSN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,16 +43,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Persona" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4573e73-939c-4fce-8e17-af1e0860e561" name="Default Changelist" comment="" />
-      <created>1605261667936</created>
+      <changelist id="94f70190-53fb-4933-a750-e2e9423eded1" name="Default Changelist" comment="" />
+      <created>1605263360701</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605261667936</updated>
+      <updated>1605263360701</updated>
     </task>
     <servers />
   </component>
@@ -69,9 +69,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="100" key="new project wizard" timestamp="1605877094862">
+    <state x="980" y="184" key="FileChooserDialogImpl" timestamp="1605444095065">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="0" y="100" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605877094862" />
+    <state x="980" y="184" key="FileChooserDialogImpl/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1605444095065" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/Numeri.java</url>
+          <line>3</line>
+          <properties field="MIN" class="Numeri" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
