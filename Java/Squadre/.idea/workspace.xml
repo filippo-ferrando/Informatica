@@ -43,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../esPreparazione" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,11 +66,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="50" key="new project wizard" timestamp="1606141929385">
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1606155263551">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="391" y="50" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1606141929385" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1606155263551" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1606323243289">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1606323243289" />
+    <state x="391" y="50" key="new project wizard" timestamp="1606156004594">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="391" y="50" key="new project wizard/1600.-148.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1606156004594" />
   </component>
 </project>

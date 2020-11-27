@@ -9,16 +9,16 @@ public class Test {
 
         Squadra s = new Squadra("borgo san giuseppe");
 
-        String nome;
+        String nome = null;
         int eta;
         float punteggio;
         System.out.println("inserisci il nome del giocatore: ");
         try {
             nome = b.readLine();
         } catch (IOException e) {
-            System.out.println("");
-            nome = null;
+            e.printStackTrace();
         }
+
         System.out.println("inserisci l'eta del giocatore: ");
         try {
             eta = Integer.parseInt(b.readLine());
@@ -48,4 +48,5 @@ public class Test {
 
 
     }
+
 }
