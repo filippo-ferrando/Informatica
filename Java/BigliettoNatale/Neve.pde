@@ -6,6 +6,7 @@ class Neve{
   int [] direction = new int[quantity];
   int minFlakeSize = 1;
   int maxFlakeSize = 5;
+
   
   public Neve(){
     for(int i = 0; i < quantity; i++) {
