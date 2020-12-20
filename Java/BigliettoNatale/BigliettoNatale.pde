@@ -8,19 +8,28 @@ int posXPupazzo = 64;
 int posYPupazzo = 132;
 int dimPupazzo = 10;
 
+int posXTesto = 170;
+int posYTesto = 80;
+
+int posXStella = 650;
+int posYStella = 55;
+float dimStella = 0.7;
+
 
 Pupazzo pupazzo = new Pupazzo(posXPupazzo, posYPupazzo, dimPupazzo);
 Neve neve = new Neve();
 Albero albero = new Albero(posXAlbero, posYAlbero);
-Testo buonNatale = new Testo();
+Testo buonNatale = new Testo(posXTesto, posYTesto);
 LuciAlbero lucine = new LuciAlbero(posXLuci, posYLuci);
+Stella stellacadente = new Stella(posXStella, posYStella, dimStella);
 
 
 void setup(){
   pupazzo = new Pupazzo(posXPupazzo, posYPupazzo, dimPupazzo);
   albero = new Albero(posXAlbero,posYAlbero);
+
   size(800, 350);
-  frameRate(60);
+  frameRate(30);
   smooth();
 }
 
@@ -36,10 +45,11 @@ void draw(){
     sPrec = millis();
   }
   
-  buonNatale.scriviTesto();
+  buonNatale.show();
   
-  lucine.luci();
+  lucine.luci(); 
   
- pupazzo.show();
+  pupazzo.show();
   
+  stellacadente.show();
 }

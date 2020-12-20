@@ -7,7 +7,6 @@ public class Triangolo{
   private float y1;
   private float y2;
   private float y3;
-  private final float DEFAULT = 10;
   
   public Triangolo(){
     x1 = 0;

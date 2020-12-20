@@ -2,8 +2,14 @@ public class Pupazzo{
   private Cerchio cerchio1 = new Cerchio();
   private Cerchio cerchio2 = new Cerchio();
   private Cerchio cerchio3 = new Cerchio();
+  
   private Cerchio cerchioSX = new Cerchio();
   private Cerchio cerchioDX = new Cerchio();
+  
+  private Cerchio bottone1 = new Cerchio();
+  private Cerchio bottone2 = new Cerchio();
+  private Cerchio bottone3 = new Cerchio();
+  private Cerchio bottone4 = new Cerchio();
   
   private Triangolo naso = new Triangolo();
   private Triangolo cappello = new Triangolo();
@@ -45,6 +51,26 @@ public class Pupazzo{
     cerchioDX.setCordY(y);
     cerchioDX.setColore(0);
     
+    bottone1.setDim(dim+2);
+    bottone1.setCordX(x+16);
+    bottone1.setCordY(y+185);
+    bottone1.setColore(0);
+    
+    bottone2.setDim(dim+2);
+    bottone2.setCordX(x+16);
+    bottone2.setCordY(y+90);
+    bottone2.setColore(0);
+    
+    bottone3.setDim(dim+2);
+    bottone3.setCordX(x+16);
+    bottone3.setCordY(y+60);
+    bottone3.setColore(0);
+    
+    bottone4.setDim(dim+2);
+    bottone4.setCordX(x+16);
+    bottone4.setCordY(y+145);
+    bottone4.setColore(0);
+    
     naso.setX1(x+21);
     naso.setX2(x+16);
     naso.setX3(x+11);
@@ -60,11 +86,7 @@ public class Pupazzo{
     cappello.setY2(y-72);
     cappello.setY3(y-17);
     cappello.setColore(color(255,0,0));
-    
-    
   }
-  
-  
   
   public void show(){
     cerchio1.show();
@@ -73,6 +95,11 @@ public class Pupazzo{
     
     cerchioSX.show();
     cerchioDX.show();
+    
+    bottone1.show();
+    bottone2.show();
+    bottone3.show();
+    bottone4.show();
     
     naso.show();
     cappello.show();

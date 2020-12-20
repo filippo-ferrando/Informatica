@@ -1,16 +1,16 @@
 class Neve{
-  int quantity = 300;
-  float [] xPosition = new float[quantity];
-  float [] yPosition = new float[quantity];
-  int [] flakeSize = new int[quantity];
-  int [] direction = new int[quantity];
-  int minFlakeSize = 1;
-  int maxFlakeSize = 5;
+  private final int QUANTITY = 300;
+  private float [] xPosition = new float[QUANTITY];
+  private float [] yPosition = new float[QUANTITY];
+  private int [] flakeSize = new int[QUANTITY];
+  private int [] direction = new int[QUANTITY];
+  private final int MINFLAKESIZE = 1;
+  private final int MAXFLAKESIZE = 5;
 
   
   public Neve(){
-    for(int i = 0; i < quantity; i++) {
-      flakeSize[i] = round(random(minFlakeSize, maxFlakeSize));
+    for(int i = 0; i < QUANTITY; i++) {
+      flakeSize[i] = round(random(MINFLAKESIZE, MAXFLAKESIZE));
       xPosition[i] = random(0, width);
       yPosition[i] = random(0, height);
       direction[i] = round(random(0, 1));
@@ -28,9 +28,9 @@ class Neve{
       ellipse(xPosition[i], yPosition[i], flakeSize[i], flakeSize[i]);
       
       if(direction[i] == 0) {
-        xPosition[i] += map(flakeSize[i], minFlakeSize, maxFlakeSize, .1, .5);
+        xPosition[i] += map(flakeSize[i], MINFLAKESIZE, MAXFLAKESIZE, .1, .5);
       } else {
-        xPosition[i] -= map(flakeSize[i], minFlakeSize, maxFlakeSize, .1, .5);
+        xPosition[i] -= map(flakeSize[i], MINFLAKESIZE, MAXFLAKESIZE, .1, .5);
       }
       
       yPosition[i] += flakeSize[i] + direction[i]; 

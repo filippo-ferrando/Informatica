@@ -1,8 +1,10 @@
 public class LuciAlbero{
-  int quantity = 9;
-  float [] xPosition = new float[quantity];
-  float [] yPosition = new float[quantity];
-  int size = 15;
+  private final int quantity = 9;
+  private final int maxSize = 15; 
+  private final int minSize = 10;
+  private float [] xPosition = new float[quantity];
+  private float [] yPosition = new float[quantity];
+  private int [] size = new int[quantity];
   
   float x=0, y=0;
   
@@ -13,6 +15,10 @@ public class LuciAlbero{
     this.x = x;
     this.y = y;
     
+    for(int k=0;k<quantity;k++){
+      size[k] = round(random(minSize,maxSize));
+    }
+    
     xPosition[0] = x;
     xPosition[1] = x+45;
     xPosition[2] = x+147;
@@ -22,7 +28,6 @@ public class LuciAlbero{
     xPosition[6] = x+87;
     xPosition[7] = x+61;
     xPosition[8] = x+570;
-    //xPosition[9] = 380;
     
     yPosition[0] = y+100;
     yPosition[1] = y+30;
@@ -33,14 +38,12 @@ public class LuciAlbero{
     yPosition[6] = y;
     yPosition[7] = y+150;
     yPosition[8] = y+80;
-    //xPosition[9] = 170;
-
   }
   
   public void luci(){
     for(int i=0; i<quantity; i++){
       noStroke();
-      ellipse(xPosition[i], yPosition[i], size, size);
+      ellipse(xPosition[i], yPosition[i], size[i], size[i]);
     }
   }
 }
