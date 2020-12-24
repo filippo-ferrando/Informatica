@@ -1,3 +1,7 @@
+/*
+Funzione di creazione del cerchio
+*/
+
 public class Cerchio{
   private float dim;
   private final float DIMMIN = 100;

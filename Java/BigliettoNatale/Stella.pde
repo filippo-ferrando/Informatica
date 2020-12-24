@@ -1,3 +1,7 @@
+/*
+stella creata usando i vertex(), spostabile tramite translate() e rimpicciolita con scale()
+*/
+
 public class Stella{
   float x, y;
   float dim;

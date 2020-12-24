@@ -1,17 +1,17 @@
 public class Pupazzo{
-  private Cerchio cerchio1 = new Cerchio();
+  private Cerchio cerchio1 = new Cerchio(); //creo gli oggetti per il corpo del pupazzo
   private Cerchio cerchio2 = new Cerchio();
   private Cerchio cerchio3 = new Cerchio();
   
-  private Cerchio cerchioSX = new Cerchio();
+  private Cerchio cerchioSX = new Cerchio(); //creo gli oggetti per gli occhi del pupazzo
   private Cerchio cerchioDX = new Cerchio();
   
-  private Cerchio bottone1 = new Cerchio();
+  private Cerchio bottone1 = new Cerchio(); //creo gli oggetti per i 4 bottoni del pupazzo
   private Cerchio bottone2 = new Cerchio();
   private Cerchio bottone3 = new Cerchio();
   private Cerchio bottone4 = new Cerchio();
   
-  private Triangolo naso = new Triangolo();
+  private Triangolo naso = new Triangolo(); //creo gli oggetti per naso e cappello
   private Triangolo cappello = new Triangolo();
   
   float x=0, y=0;
@@ -26,7 +26,7 @@ public class Pupazzo{
     this.y = y;
     this.dim = dim;
     
-    cerchio1.setDim(dim+140);
+    cerchio1.setDim(dim+140);  //assegno ad ogni cerchio dimensione, x, y e colore;
     cerchio1.setCordX(x+16);
     cerchio1.setCordY(y+168);
     cerchio1.setColore(255);

@@ -1,15 +1,15 @@
 public class Albero{
-  private Triangolo t1 = new Triangolo();
+  private Triangolo t1 = new Triangolo();  //dichiarazione dei 3 triangoli dell'albero
   private Triangolo t2 = new Triangolo();
   private Triangolo t3 = new Triangolo();
-  private Rettangolo tronco = new Rettangolo();
-  private float x = 0, y = 0;
+  private Rettangolo tronco = new Rettangolo();  //tronco dell'albero
+  private float x = 0, y = 0; //coordinate per spostare l'albero
   
   public Albero(float x, float y){
-    this.x = x;
+    this.x = x; //assegno le coordinate passate al costruttore
     this.y = y;
     
-    t1.setX1(x-100);
+    t1.setX1(x-100); //creo i 3 triangoli relativamente alla x e alla y passate
     t1.setX2(x);
     t1.setX3(x+100);
     t1.setY1(y+225);
@@ -47,17 +47,4 @@ public class Albero{
     t2.show();
     t3.show();
   }
-  
-  
-  /*
-  public void creaAlbero(){
-    fill(101,67,33);
-    rect(600,300,25,50);
-    
-    fill(1,50,32);
-    triangle(507, 300, 607, 75, 707, 300); 
-    triangle(507, 250, 607, 60, 707, 250);
-    triangle(507, 200, 607, 40, 707, 200);
-  }
-  */
 }

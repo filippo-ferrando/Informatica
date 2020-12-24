@@ -1,3 +1,7 @@
+/*
+Creo il triangolo
+*/
+
 public class Triangolo{
   private color colore;
   private color bordo;

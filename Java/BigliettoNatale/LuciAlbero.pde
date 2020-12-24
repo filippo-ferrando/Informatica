@@ -1,12 +1,12 @@
 public class LuciAlbero{
-  private final int quantity = 9;
+  private final int quantity = 9;  //dichiaro le variabili e costanti necessarie
   private final int maxSize = 15; 
   private final int minSize = 10;
-  private float [] xPosition = new float[quantity];
+  private float [] xPosition = new float[quantity];  //per creaqre le palline uso un vettore di coordinate x e y
   private float [] yPosition = new float[quantity];
   private int [] size = new int[quantity];
   
-  float x=0, y=0;
+  float x=0, y=0; //coordinate relative
   
   //x = 520
   //y = 100
@@ -42,7 +42,7 @@ public class LuciAlbero{
   
   public void luci(){
     for(int i=0; i<quantity; i++){
-      noStroke();
+      noStroke(); //tolgo il bordo alle palline
       ellipse(xPosition[i], yPosition[i], size[i], size[i]);
     }
   }

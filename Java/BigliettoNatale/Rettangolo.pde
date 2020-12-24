@@ -1,3 +1,7 @@
+/*
+Creazione del rettangolo
+*/
+
 public class Rettangolo{
   private color colore;
   private color bordo;

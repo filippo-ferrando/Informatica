@@ -1,4 +1,4 @@
-int posXAlbero = 650;
+int posXAlbero = 650;  //coordinate per disegnare gli oggetti
 int posYAlbero = 75;
 
 int posXLuci = 560;
@@ -16,7 +16,7 @@ int posYStella = 55;
 float dimStella = 0.7;
 
 
-Pupazzo pupazzo = new Pupazzo(posXPupazzo, posYPupazzo, dimPupazzo);
+Pupazzo pupazzo = new Pupazzo(posXPupazzo, posYPupazzo, dimPupazzo);  //chiamo le funzioni passando le coordinate dichiarate in precedenza
 Neve neve = new Neve();
 Albero albero = new Albero(posXAlbero, posYAlbero);
 Testo buonNatale = new Testo(posXTesto, posYTesto);
@@ -28,19 +28,19 @@ void setup(){
   pupazzo = new Pupazzo(posXPupazzo, posYPupazzo, dimPupazzo);
   albero = new Albero(posXAlbero,posYAlbero);
 
-  size(800, 350);
-  frameRate(30);
-  smooth();
+  size(800, 350); //dimensione dello schermo
+  frameRate(30); //frame per secondo, dimezzatti per avere le animaizoni più fluide
+  smooth(); //disegna le forme geometriche con bordi stondati
 }
 
-int sPrec = 0;
+int sPrec = 0; //salvataggio del tempo per cambiare il colore più lentamente rispetto al ciclo generale di processing
 
 void draw(){
-  noStroke();
-  neve.frame();
+  noStroke(); //toglie i bordi per disegnare la neve
+  neve.show();
   albero.show();
   
-  if(millis() - sPrec > 1000){
+  if(millis() - sPrec > 1000){ //controlla il passare del tempo per far cambviare i colori più lentamente rispetto ai 30fps di processing
     buonNatale.cambiaColore();
     sPrec = millis();
   }
