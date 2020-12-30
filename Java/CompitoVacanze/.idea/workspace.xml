@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f58077ef-7056-4006-a293-f0ca041345c4" name="Default Changelist" comment="" />
+    <list default="true" id="d960fb84-b8a0-4f4a-ab9c-9d01fa253521" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -35,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1l8cGPDC7MobpQOV3FxvVVPuzeu" />
+  <component name="ProjectId" id="1mLAeYntUj5WyN4hkVOPCLcg4Lh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,14 +45,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="CompitoVacanze" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f58077ef-7056-4006-a293-f0ca041345c4" name="Default Changelist" comment="" />
-      <created>1606982064854</created>
+      <changelist id="d960fb84-b8a0-4f4a-ab9c-9d01fa253521" name="Default Changelist" comment="" />
+      <created>1609262595622</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606982064854</updated>
+      <updated>1609262595622</updated>
     </task>
     <servers />
   </component>
@@ -68,9 +83,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="50" key="new project wizard" timestamp="1609262593088">
+    <state x="605" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1609266095551">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="391" y="50" key="new project wizard/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609262593088" />
+    <state x="605" y="145" key="#com.intellij.ide.util.MemberChooser/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609266095551" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1609324831033">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609324831033" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1609324831032">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.center/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609324831032" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1609324831032">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609324831032" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1609324831033">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/1600.-149.1680.1010/0.0.1600.860@0.0.1600.860" timestamp="1609324831033" />
   </component>
 </project>
