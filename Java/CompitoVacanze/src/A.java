@@ -5,8 +5,6 @@ L'azienda ha necessità di memorizzare gli ordini dei  clienti.
 - implementare il metodo public void addCliente() in grado di richiedere all'utente l'inserimento da tastiera  dei dati di un cliente ed aggiungerlo all'elenco clienti
  */
 
-
-
 public class A extends Robot{
     //saldatura
     private int spessore;
@@ -18,9 +16,7 @@ public class A extends Robot{
         this.precisione = precisione;
     }
 
-    public int getSpessore() {
-        return spessore;
-    }
+    public int getSpessore() { return spessore; }
 
     public int getPrecisione() {
         return precisione;
