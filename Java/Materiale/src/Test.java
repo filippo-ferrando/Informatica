@@ -1,9 +1,16 @@
+import java.util.Vector;
+
 public class Test {
     public static void main(String[] args) {
-        Cubo c1 = new Cubo(1000, 1);
-        Sfera s1 = new Sfera(4000, 15);
+        Vector<Solido> vet = new Vector<Solido>(4);
 
-        System.out.println(c1.getPeso());
-        System.out.println(s1.getPeso());
+        vet.add(new Cubo(4,2));
+        vet.add(new Sfera(4000, 15));
+        vet.add(new Cubo(25, 564));
+        vet.add(new Sfera(325345,56734));
+
+
+        System.out.println(vet.toString());
+
     }
 }
