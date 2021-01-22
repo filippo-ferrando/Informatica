@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public enum Colori {
+public enum Colori {
+    BIANCO,
+    GRIGIO,
+    NERO;
 }
