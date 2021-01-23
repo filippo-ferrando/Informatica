@@ -7,6 +7,9 @@ public class Azienda {
         this.parcoMacchine = parcoMacchine;
     }
 
+    public Azienda() {
+    }
+
     public float getCostoTotale(){
         float costoTotale = 0;
         for(int k=0; k<parcoMacchine.size();k++){
@@ -21,7 +24,7 @@ public class Azienda {
         boolean ok = false;
         boolean ok1 = false;
         while(k<parcoMacchine.size() && ok==false){
-            if(parcoMacchine.get(k).getFiliale().equals(filiale)){
+            if(parcoMacchine.get(k).getNomeFiliale().equals(filiale)){
                 ok = true;
                 while(i<parcoMacchine.size() && ok1 == false ) {
                     if (parcoMacchine.get(k).getAuto(i).getTarga().equals(targa)) {

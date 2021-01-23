@@ -4,6 +4,14 @@ public class ParcoMacchine {
     private String nomeFiliale;
     private Vector<Auto> filiale;
 
+    public ParcoMacchine() {
+    }
+
+    public ParcoMacchine(String nomeFiliale, Vector<Auto> filiale) {
+        this.nomeFiliale = nomeFiliale;
+        this.filiale = filiale;
+    }
+
     public void add(Auto a){
         filiale.add(a);
     }
@@ -51,7 +59,7 @@ public class ParcoMacchine {
         return nomeFiliale;
     }
 
-    public String getauto(int k){
+    public Auto getAuto(int k){
         return filiale.get(k);
     }
 }
