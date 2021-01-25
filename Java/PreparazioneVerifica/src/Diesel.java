@@ -1,5 +1,5 @@
 public class Diesel extends Auto{
-    private final static float PREZZO_LITRO = (float)1.4;
+    private final static float PREZZO_LITRO = 1.4f;
     private float litroChilometro;
 
     public Diesel(Colori colore, String targa, float kmPercorsi, float litroChilometro) throws ValoreNonValidoExcept{
@@ -12,6 +12,7 @@ public class Diesel extends Auto{
         return PREZZO_LITRO;
     }
 
+
     public float getLitroChilometro() {
         return litroChilometro;
     }
@@ -22,13 +23,14 @@ public class Diesel extends Auto{
 
     public float getCostoTotale(){
         float costoTotale;
-        costoTotale = getKmPercorsi() / (getLitroChilometro() * PREZZO_LITRO);
+        costoTotale = super.getKmPercorsi() * getLitroChilometro() * PREZZO_LITRO;
         return costoTotale;
     }
 
     @Override
     public String toString() {
         return "Diesel{" +
+                super.toString() +
                 "litroChilometro=" + litroChilometro +
                 '}';
     }

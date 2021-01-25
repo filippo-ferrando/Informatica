@@ -7,8 +7,6 @@ public class Azienda {
         this.parcoMacchine = parcoMacchine;
     }
 
-    public Azienda() {
-    }
 
     public float getCostoTotale(){
         float costoTotale = 0;
@@ -18,7 +16,7 @@ public class Azienda {
         return costoTotale;
     }
 
-    public void datiAuto(String targa, String filiale) throws AutoNonPresenteExcept{
+    public String datiAuto(String targa, String filiale) throws AutoNonPresenteExcept{
         int k=0;
         int i = 0;
         boolean ok = false;
@@ -29,7 +27,7 @@ public class Azienda {
                 while(i<parcoMacchine.size() && ok1 == false ) {
                     if (parcoMacchine.get(k).getAuto(i).getTarga().equals(targa)) {
                         ok1 = true;
-                        System.out.println(parcoMacchine.get(k).getAuto(i).toString());
+                        //System.out.println(parcoMacchine.get(k).getAuto(i).toString());
                     } else {
                         i++;
                     }
@@ -43,10 +41,14 @@ public class Azienda {
         }else if (ok1 == false){
             throw new AutoNonPresenteExcept("Auto non esiste");
         }
+        return parcoMacchine.get(k).getAuto(i).toString();
     }
 
     public void add(ParcoMacchine p){
         parcoMacchine.add(p);
     }
 
+    public Vector<ParcoMacchine> getParcoMacchine() {
+        return parcoMacchine;
+    }
 }

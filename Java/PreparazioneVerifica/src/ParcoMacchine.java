@@ -26,7 +26,6 @@ public class ParcoMacchine {
     }
 
     public boolean IsPiuCostosoDiesel(){
-        boolean ok = true;
         float costoTotDiesel = 0;
         float costoTotElettrico = 0;
 
@@ -38,12 +37,35 @@ public class ParcoMacchine {
             }
         }
 
-        if(costoTotDiesel > costoTotElettrico){
-            return ok = true;
+        if(costoTotDiesel < costoTotElettrico){
+            return true;
         }else{
-            return ok = false;
+            return false;
         }
 
+    }
+
+    public float getCostoDiesel(){
+        float costoDiesel = 0f;
+
+        for(int k=0; k<filiale.size(); k++){  //for(Auto a: filiale)
+            if(filiale.get(k) instanceof Diesel){
+                costoDiesel += filiale.get(k).getCostoTotale();
+            }
+        }
+        return costoDiesel;
+    }
+
+    public float getCostoElettrico(){
+        float costoElettrico = 0f;
+
+        for(Auto a: filiale){
+            if(a instanceof Elettrica){
+                costoElettrico += a.getCostoTotale();
+            }
+
+        }
+        return  costoElettrico;
     }
 
     public void datiAuto(String targa) throws AutoNonPresenteExcept{
@@ -61,5 +83,19 @@ public class ParcoMacchine {
 
     public Auto getAuto(int k){
         return filiale.get(k);
+    }
+
+    public Vector<Auto> getFiliale() {
+        return filiale;
+    }
+
+    @Override
+    public String toString() {
+        return "nomeFiliale='" + nomeFiliale + '\'' +
+                " costoTotale= " + this.getCostoTotale() +
+                " autoDieselCosto= " + this.getCostoDiesel() +
+                " autoElettricaCosto= " + this.getCostoElettrico() +
+                " isPiùEconomicoDiesel= " + this.IsPiuCostosoDiesel() +
+                '}';
     }
 }
