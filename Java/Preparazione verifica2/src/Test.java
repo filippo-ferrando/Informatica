@@ -27,6 +27,14 @@ public class Test {
 
         for(int i = 0; i < 3; i++) s3c2.addPozzo(new PozzoTerrestre(true, 67953, tipoTerreno.SABBIOSO));
 
+        PozzoMarino p1 = null;
+
+        try{
+            p1 = new PozzoMarino(true, 23234, 23452);
+        }catch(ValoreNonValidoExcept e){
+            System.out.println(e.getMessage());
+        }
+
         c1.addSito(s1c1);
         c1.addSito(s2c1);
         c1.addSito(s3c1);
