@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a3f8453-ea17-40d7-9b5e-4fff97e7ec86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ferrando.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UMLFerrando.class.violet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Agenzia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Componenti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GeneraCodice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Missile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MissileNonPresente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Moduli.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Motore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serbatoio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ValoreNonValido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enumModuli.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Preparazione verifica2/UMLEsercizioPrep2.class.violet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CorrezioneCompitoVacanze/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CorrezioneCompitoVacanze/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Macchine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Macchine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Preparazione verifica2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Preparazione verifica2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Preparazione verifica2/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Preparazione verifica2/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/CorrezioneVerifica.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Componente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Flotta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Missile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/MissileNonPresente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Modulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Motore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Serbatoio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/ValoreNonValido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,6 +78,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
