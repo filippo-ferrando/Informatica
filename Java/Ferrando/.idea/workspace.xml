@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8a3f8453-ea17-40d7-9b5e-4fff97e7ec86" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/misc.xml" afterDir="false" />
@@ -18,6 +19,9 @@
       <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/ValoreNonValido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="8a3f8453-ea17-40d7-9b5e-4fff97e7ec86" name="Default Changelist" comment="" />
+>>>>>>> c4064101ff8ac252006c70ec428c5c96f036a37f
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
