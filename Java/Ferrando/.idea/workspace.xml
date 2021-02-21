@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="8a3f8453-ea17-40d7-9b5e-4fff97e7ec86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/CorrezioneVerifica.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Componente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Flotta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Missile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/MissileNonPresente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Modulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Motore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Serbatoio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CorrezioneVerifica/src/ValoreNonValido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
     <list default="true" id="8a3f8453-ea17-40d7-9b5e-4fff97e7ec86" name="Default Changelist" comment="" />
+>>>>>>> c4064101ff8ac252006c70ec428c5c96f036a37f
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
