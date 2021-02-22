@@ -1,7 +1,13 @@
-public class Cerchio extends Figura implements Disegnabile{
+public class Cerchio implements Figura {
+    private double raggio;
+    private static final double DEFAULT_R = 1;
 
-    public Cerchio(String nome) {
-        super(nome);
+    public Cerchio(Double raggio) {
+        if(raggio >= 0){
+            this.raggio = raggio;
+        }else{
+            this.raggio = DEFAULT_R;
+        }
     }
 
     @Override

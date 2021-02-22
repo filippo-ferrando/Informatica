@@ -1,7 +1,5 @@
-public abstract class Figura {
-    private String nome;
+public interface class Figura {
+    void draw() { }
 
-    public Figura(String nome) {
-        this.nome = nome;
-    }
+    void erase(){ }
 }
