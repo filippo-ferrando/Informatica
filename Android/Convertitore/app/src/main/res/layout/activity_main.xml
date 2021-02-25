@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <EditText
+            android:id="@+id/lblTitolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Convertitore" />
+
+        <TextView
+            android:id="@+id/lblLira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lira" />
+
+        <EditText
+            android:id="@+id/txtLira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblEuro"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Euro" />
+
+        <EditText
+            android:id="@+id/txtEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEuroLire"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:text="Euro - Lire"
+            app:strokeColor="#F44336" />
+
+        <Button
+            android:id="@+id/btnLireEuro"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Lire - Euro"
+            app:iconTint="#FF9800"
+            app:strokeColor="#03A9F4" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
