@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="myImage">
+       <item>Primo piano</item>
+       <item>Colle San Bernardo</item>
+       <item>Primo piano con me</item>
+       <item>Moto con sfondo</item>
+       <item>Primo piano da dietro</item>
+       <item>Foto viale con Porra</item>
+   </string-array>
+</resources>
