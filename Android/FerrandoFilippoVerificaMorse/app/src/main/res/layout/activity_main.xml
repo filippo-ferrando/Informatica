@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblTitolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decoder morse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/lblLetteraDaCodificare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scegli la lettera di cui vuoi la codifica:" />
+
+        <Spinner
+            android:id="@+id/cboAlfabeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_alfabeto" />
+
+        <TextView
+            android:id="@+id/lblCorrispondeteNato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parola corrispondente nell'alfabeto NATO:" />
+
+        <EditText
+            android:id="@+id/txtTraduzioneNato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblCodiceMorse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CorrispondenteCodiceMorse" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPrimoSegnale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_weight="1"
+                        android:text="Primo segnale" />
+
+                    <RadioGroup
+                        android:layout_width="150dp"
+                        android:layout_height="34dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb1Primo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="linea" />
+
+                            <RadioButton
+                                android:id="@+id/rb2Primo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="punto" />
+
+                            <RadioButton
+                                android:id="@+id/rb3Primo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="nulla" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblSecondoSegnale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="1"
+                        android:text="Secondo segnale" />
+
+                    <RadioGroup
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb1Secondo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="linea" />
+
+                            <RadioButton
+                                android:id="@+id/rb2Secondo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="punto" />
+
+                            <RadioButton
+                                android:id="@+id/rb3Secondo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="nulla" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblTerzoSegnale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="1"
+                        android:text="Terzo segnale" />
+
+                    <RadioGroup
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb1Terzo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="linea" />
+
+                            <RadioButton
+                                android:id="@+id/rb2Terzo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="punto" />
+
+                            <RadioButton
+                                android:id="@+id/rb3Terzo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="nulla" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblQuartoSegnale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="1"
+                        android:text="Quarto segnale" />
+
+                    <RadioGroup
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb1Quarto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="linea" />
+
+                            <RadioButton
+                                android:id="@+id/rb2Quarto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="punto" />
+
+                            <RadioButton
+                                android:id="@+id/rb3Quarto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="nulla" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblQuintoSegnale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_weight="1"
+                        android:text="Quinto segnale" />
+
+                    <RadioGroup
+                        android:layout_width="169dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb1Quinto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="linea" />
+
+                            <RadioButton
+                                android:id="@+id/rb2Quinto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="punto" />
+
+                            <RadioButton
+                                android:id="@+id/rb3Quinto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="nulla" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/img1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
