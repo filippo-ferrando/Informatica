@@ -26,18 +26,33 @@ ul {
       color: black;
       font-size: larger;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      margin-left: 100px;
-      margin-right: 80px;
+      align-items: center;
+      align-self: center;
       text-align: center;
+      display: block;
+  }
+
+  p.video {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    display: block;
   }
 
   table {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: large;
     margin-top: 100px;
-    margin-left: center;
     text-align: center;
-    border-spacing: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+  }
 
+  button.btnCentered {
+    margin: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
 
   }
