@@ -6,7 +6,7 @@ function Modulo(){
     var diffBassa = document.getElementById("bassa")
     var diffAlta = document.getElementById("alta")
     var grid = document.getElementById("grid");
-    var testMode = true; //Turn this variable to true to see where the mines are
+    var testMode = false; 
     var diffScelta
 
     if ((nickname == "") || (nickname == "undefined")) {
@@ -32,8 +32,6 @@ function Modulo(){
     console.log(diffScelta)
 
     // ### GAME ###
-
-   // 
     
         
     generateGrid();
@@ -60,7 +58,6 @@ function Modulo(){
     }
 
     function addMinesFacile() {
-    //Add mines randomly
     for (var i=0; i<(dimensioni*2); i++) {
         var row = Math.floor(Math.random() * dimensioni);
         var col = Math.floor(Math.random() * dimensioni);
@@ -71,7 +68,6 @@ function Modulo(){
     }
 
     function addMinesDifficile() {
-        //Add mines randomly
         for (var i=0; i<(dimensioni*3); i++) {
             var row = Math.floor(Math.random() * dimensioni);
             var col = Math.floor(Math.random() * dimensioni);
@@ -82,7 +78,6 @@ function Modulo(){
         }
 
     function revealMines() {
-        //Highlight all mines in red
         for (var i=0; i<dimensioni; i++) {
         for(var j=0; j<dimensioni; j++) {
             var cell = grid.rows[i].cells[j];
@@ -106,18 +101,15 @@ function Modulo(){
     }
 
     function clickCell(cell) {
-    //Check if the end-user clicked on a mine
     if (cell.getAttribute("data-mine")=="true") {
         revealMines();
         alert(nickname + " Game Over");
         setTimeout(() => { generateGrid(); }, 2000)
     } else {
         cell.className="clicked";
-        //Count and display the number of adjacent mines
         var mineCount=0;
         var cellRow = cell.parentNode.rowIndex;
         var cellCol = cell.cellIndex;
-        //alert(cellRow + " " + cellCol);
         for (var i=Math.max(cellRow-1,0); i<=Math.min(cellRow+1,(dimensioni-1)); i++) {
         for(var j=Math.max(cellCol-1,0); j<=Math.min(cellCol+1,(dimensioni-1)); j++) {
             if (grid.rows[i].cells[j].getAttribute("data-mine")=="true") mineCount++;
@@ -125,7 +117,6 @@ function Modulo(){
         }
         cell.innerHTML=mineCount;
         if (mineCount==0) { 
-        //Reveal all adjacent cells as they do not have a mine
         for (var i=Math.max(cellRow-1,0); i<=Math.min(cellRow+1,(dimensioni-1)); i++) {
             for(var j=Math.max(cellCol-1,0); j<=Math.min(cellCol+1,(dimensioni-1)); j++) {
             //Recursive Call
