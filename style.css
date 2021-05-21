@@ -105,3 +105,27 @@ ul {
       color: dodgerblue;
       font-size: 17px;
   }
+
+  #grid {
+    background-color: black;
+    color: #DDDDDD;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #grid TR TD{
+    border:1px solid white;
+    background: #999999;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+  }
+  
+  #grid TR TD.clicked {
+      background: #333333;
+  }
+  
+  #grid TR TD.mine {
+      background: #FF0000;
+  }
