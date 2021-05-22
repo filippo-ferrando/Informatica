@@ -26,29 +26,31 @@
         <div>
             <p class="principale">
                 Compila il seguente form per generare il campo!
+
+                <table>
+                    <form method="post" name="modulo">
+                        <tr><td><b>Nickname</b></td><td><input type="text" name="nickname"></td></tr>
+                        <tr><td><b>Difficoltà</b></td><td>
+                        <input id="bassa" type="radio" name="diff" value="1" checked>Bassa
+                        <input id="alta" type="radio" name="diff" value="2">Alta
+                        </td>
+                        </tr>
+                        <tr><td><b>Dimesioni</b></td><td>
+                        <select name="dim">
+                        <option>- Seleziona la dimensione del campo -</option>
+                        <option value="5">5x5</option>
+                        <option value="10">10x10</option>
+                        <option value="15">15x15</option>
+                        <option value="20">20x20</option>
+                        <option value="25">25x25</option>
+                        </select>
+                        </td>
+                        </tr>
+                        <tr><td colspan="2" align="right"><input type="button" value="Invia" onClick="Modulo()"></td></tr>
+                        </form>
+                </table>
             </p>
-            <table>
-                <form method="post" name="modulo">
-                    <tr><td><b>Nickname</b></td><td><input type="text" name="nickname"></td></tr>
-                    <tr><td><b>Difficoltà</b></td><td>
-                    <input id="bassa" type="radio" name="diff" value="1" checked>Bassa
-                    <input id="alta" type="radio" name="diff" value="2">Alta
-                    </td>
-                    </tr>
-                    <tr><td><b>Dimesioni</b></td><td>
-                    <select name="dim">
-                    <option>- Seleziona la dimensione del campo -</option>
-                    <option value="5">5x5</option>
-                    <option value="10">10x10</option>
-                    <option value="15">15x15</option>
-                    <option value="20">20x20</option>
-                    <option value="25">25x25</option>
-                    </select>
-                    </td>
-                    </tr>
-                    <tr><td colspan="2" align="right"><input type="button" value="Invia" onClick="Modulo()"></td></tr>
-                    </form>
-            </table>
+            
 
 
 

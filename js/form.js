@@ -108,5 +108,6 @@ function Modulo() {
 
         //document.modulo.action = "registrazione.asp";
         document.modulo.submit();
+        window.open("../index.html")
     }
     }
