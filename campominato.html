@@ -8,13 +8,13 @@
 
     <body>
         <header>            
-            <ul>
-                <li style="float:left"><h1><a href="index.html">Blockchain</a></h1></li>
-                <li><h3><a href="registrati.html">Registrati</a></h3></li>
-                <li><h3><a href="principaliUtilizzi.html">Utilizzi</a></h3></li>
-                <li><h3><a href="caratteristiche.html">Caratteristiche</a></h3></li>
-                <li><h3><a href="funzionamento.html">Funzionamento</a></h3></li>
-                <li><h3><a href="cose.html">Cos'è</a></h3></li>
+            <ul class="nav">
+                <li class="nav" style="float:left"><h1><a href="index.html">Blockchain</a></h1></li>
+                <li class="nav"><h3><a href="registrati.html">Registrati</a></h3></li>
+                <li class="nav"><h3><a href="principaliUtilizzi.html">Crypto</a></h3></li>
+                <li class="nav"><h3><a href="caratteristiche.html">Caratteristiche</a></h3></li>
+                <li class="nav"><h3><a href="funzionamento.html">Funzionamento</a></h3></li>
+                <li class="nav"><h3><a href="cose.html">Cos'è</a></h3></li>
             </ul>
 
         </header>
@@ -37,7 +37,7 @@
                         </tr>
                         <tr><td><b>Dimesioni</b></td><td>
                         <select name="dim">
-                        <option>- Seleziona la dimensione del campo -</option>
+                        <option value="">- Seleziona la dimensione del campo -</option>
                         <option value="5">5x5</option>
                         <option value="10">10x10</option>
                         <option value="15">15x15</option>
@@ -47,13 +47,10 @@
                         </td>
                         </tr>
                         <tr><td colspan="2" align="right"><input type="button" value="Invia" onClick="Modulo()"></td></tr>
-                        </form>
+                    </form>
                 </table>
             </p>
             
-
-
-
             <table id=grid></table>
             
             <footer class=footer>Made with ❤️ by Filippo Ferrando</footer>

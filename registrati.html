@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/form.js"></script>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/form.js"></script>
+  </head>
 
-    </head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li class="nav" style="float: left">
+          <h1><a href="index.html">Blockchain</a></h1>
+        </li>
+        <li class="nav">
+          <h3><a href="registrati.html">Registrati</a></h3>
+        </li>
+        <li class="nav">
+          <h3><a href="principaliUtilizzi.html">Crypto</a></h3>
+        </li>
+        <li class="nav">
+          <h3><a href="caratteristiche.html">Caratteristiche</a></h3>
+        </li>
+        <li class="nav">
+          <h3><a href="funzionamento.html">Funzionamento</a></h3>
+        </li>
+        <li class="nav">
+          <h3><a href="cose.html">Cos'è</a></h3>
+        </li>
+      </ul>
+    </header>
 
-    <body>
-        <header>            
-            <ul>
-                <li style="float:left"><h1><a href="index.html">Blockchain</a></h1></li>
-                <li><h3><a href="registrati.html">Registrati</a></h3></li>
-                <li><h3><a href="principaliUtilizzi.html">Utilizzi</a></h3></li>
-                <li><h3><a href="caratteristiche.html">Caratteristiche</a></h3></li>
-                <li><h3><a href="funzionamento.html">Funzionamento</a></h3></li>
-                <li><h3><a href="cose.html">Cos'è</a></h3></li>
-            </ul>
-
-        </header>
-
-        <table>
-            <form method="post" name="modulo">
-            <tr>
-            <td colspan="2" align="center"><b>Registrazione al servizio<br>Tutti i campi sono obbligatori</b></td>
-            </tr>
-            <tr><td><b>Nome</b></td><td><input type="text" name="nome"></td></tr>
-            <tr><td><b>Cognome</b></td><td><input type="text" name="cognome"></td></tr>
-            <tr><td><b>Nickname</b></td><td><input type="text" name="nickname"></td></tr>
-            <tr><td><b>Password</b></td><td><input type="password" name="password"></td></tr>
-            <tr><td><b>Conferma password</b></td><td><input type="password" name="conferma"></td></tr>
-            <tr><td><b>Data di nascita (es: 12/04/1978)</b></td><td><input type="text" name="nascita"></td></tr>
-            <tr><td><b>Sesso</b></td><td>
-            <input type="radio" name="sesso" value="M" checked>M
-            <input type="radio" name="sesso" value="F">F
-            </td>
-            </tr>
-            <tr><td><b>Città</b></td><td>
+    <table>
+      <form method="post" name="modulo">
+        <tr>
+          <td colspan="2" align="center">
+            <b>Registrazione al servizio<br />Tutti i campi sono obbligatori</b>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Nome</b></td>
+          <td><input type="text" name="nome" /></td>
+        </tr>
+        <tr>
+          <td><b>Cognome</b></td>
+          <td><input type="text" name="cognome" /></td>
+        </tr>
+        <tr>
+          <td><b>Nickname</b></td>
+          <td><input type="text" name="nickname" /></td>
+        </tr>
+        <tr>
+          <td><b>Password</b></td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td><b>Conferma password</b></td>
+          <td><input type="password" name="conferma" /></td>
+        </tr>
+        <tr>
+          <td><b>Data di nascita (es: 12/04/1978)</b></td>
+          <td><input type="text" name="nascita" /></td>
+        </tr>
+        <tr>
+          <td><b>Sesso</b></td>
+          <td>
+            <input type="radio" name="sesso" value="M" checked />M
+            <input type="radio" name="sesso" value="F" />F
+          </td>
+        </tr>
+        <tr>
+          <td><b>Città</b></td>
+          <td>
             <select name="citta">
-            <option>- Seleziona la tua città -</option>
-            <option value="Roma">Roma</option>
-            <option value="Milano">Milano</option>
-            <option value="Napoli">Napoli</option>
-            <option value="Firenze">Firenze</option>
-            <option value="Bologna">Bologna</option>
+              <option>- Seleziona la tua città -</option>
+              <option value="Roma">Roma</option>
+              <option value="Milano">Milano</option>
+              <option value="Napoli">Napoli</option>
+              <option value="Firenze">Firenze</option>
+              <option value="Bologna">Bologna</option>
             </select>
-            </td>
-            </tr>
-            <tr><td><b>Indirizzo</b></td><td><input type="text" name="indirizzo"></td></tr>
-            <tr><td><b>Telefono (senza spazi nè simboli)</b></td><td><input type="text" name="telefono"></td></tr>
-            <tr><td><b>Email</b></td><td><input type="text" name="email"></td></tr>
-            <tr><td colspan="2" align="right"><input type="button" value="Invia" onClick="Modulo()"></td></tr>
-            </form>
-            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Indirizzo</b></td>
+          <td><input type="text" name="indirizzo" /></td>
+        </tr>
+        <tr>
+          <td><b>Telefono (senza spazi nè simboli)</b></td>
+          <td><input type="text" name="telefono" /></td>
+        </tr>
+        <tr>
+          <td><b>Email</b></td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right">
+            <input type="button" value="Invia" onClick="Modulo()" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
 
-    </body>
-
-    <footer class=footer>Made with ❤️ by Filippo Ferrando</footer>
-
+  <footer class="footer">Made with ❤️ by Filippo Ferrando</footer>
 </html>
