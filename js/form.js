@@ -106,7 +106,6 @@ function Modulo() {
         var myCsv = nome + "\n" + cognome + "\n" + nickname + "\n" + password + "\n" + nascita + "\n" + citta + "\n" + indirizzo + "\n" + telefono + "\n" + email + "\n";
         window.open('data:text/csv;charset=utf-8,' + escape(myCsv));
 
-        //document.modulo.action = "registrazione.asp";
         document.modulo.submit();
         window.open("../index.html")
     }

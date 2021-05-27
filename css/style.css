@@ -25,8 +25,6 @@ li a:hover {
 div.split-3 div {
   float: left;
   width: 29%;
-  width: 33%;
-  width: 29%;
   padding: 0 2%;
 }
 
@@ -93,6 +91,7 @@ button.btnCentered {
 }
 
 footer {
+  clear: both;
   padding-top: 8%;
   color: #868e96;
   text-align: center;
