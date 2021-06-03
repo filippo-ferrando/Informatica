@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML 5 - Web Storage API</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css" /> 
+    <script>
+
+        //
+        // vedi: http://www.w3.org/TR/webstorage/ per le specifiche e la documentazione completa di Web Storage API
+        //
+
+        function getStorage()
+        {
+            var storageName = (document.getElementById("chkLocalStorage").checked) ? "localStorage" : "sessionStorage";
+            document.getElementById("storageName").innerHTML = "Storage in uso: " + storageName
+            try
+            {
+                return (storageName in window && window[storageName] !== null) ? window[storageName] : null;                    
+            } 
+            catch (e)
+            {
+                return null;
+            }
+        };
+
+        function check()
+        {
+            var storage = getStorage();
+            if (storage == null)
+            {
+                document.getElementById("debug").innerHTML = "Il tuo browser non supporta le Web Storage API";
+                return;
+            }
+            document.getElementById("debug").innerHTML = "Storage disponibile; al momento contiene " + storage.length + " elementi";
+        };
+        function readAll()
+        {
+            var storage = getStorage();
+            document.getElementById("debug").innerHTML = storage.length + " elementi trovati:<br />";
+            for (var i = 0; i < storage.length; i++)
+            {
+                var key = storage.key(i);
+                var value = storage.getItem(key);
+                document.getElementById("debug").innerHTML += "#" + i + " - " + key + " = " + value + "<br />";
+            }
+        };
+        function deleteAll()
+        {
+            var storage = getStorage();
+            storage.clear();
+            document.getElementById("debug").innerHTML = "Eliminate tutte le chiavi";
+        };
+
+        function read()
+        {
+            var storage = getStorage();
+            var key = document.getElementById("storageKey").value;
+            var value = storage.getItem(key);  // oppure: storage[key];
+            document.getElementById("debug").innerHTML = "Letto: " + key + " = " + value;
+        };
+        function remove()
+        {
+            var storage = getStorage();
+            var key = document.getElementById("storageKey").value;
+            storage.removeItem(key);
+            document.getElementById("debug").innerHTML = "Eliminata la chiave: " + key;
+        };
+        function save()
+        {
+            var storage = getStorage();
+            var key = document.getElementById("storageKey").value;
+            var value = document.getElementById("storageValue").value;            
+            try
+            {
+                storage.setItem(key, value); // oppure: storage[key] = value;
+                document.getElementById("debug").innerHTML = "Salvato: " + key + " = " + value;
+            }
+            catch (e)
+            {
+                document.getElementById("debug").innerHTML = "<strong style=\"color: red;\">" + e + "</strong>";                
+            }                        
+        };
+
+        function json()
+        {
+            var key = "json_demo";
+            var value = "{ id: 1234, enabled: true, name: 'object name' }";
+            var storage = getStorage();            
+            try
+            {
+                storage.setItem(key, value);
+                document.getElementById("debug").innerHTML = "JSON: " + value + " (key: " + key + ")<br />";
+                var jsonObject = eval("(" + storage[key] + ")");
+                document.getElementById("debug").innerHTML += "id: " + jsonObject.id + " - enabeld: " + jsonObject.enabled + " - name: " + jsonObject.name;                
+            }
+            catch (e)
+            {
+                document.getElementById("debug").innerHTML = "<strong style=\"color: red;\">" + e + "</strong>";
+            } 
+        };
+
+    </script>
+</head>
+<body>
+	<header>
+		<h1>Demo</h1>
+	</header> 
+	<article> 
+		<header><h1>Ajax</h1></header>
+		<form action="#" method="get" onsubmit="return false;">
+			<input type="radio" id="chkLocalStorage" name="chkStorage" checked /><label for="chkLocalStorage">Local Storage</label>
+			<input type="radio" id="chkSessionStorage" name="chkStorage"  /><label for="chkSessionStorage">Session Storage</label>
+			<br /><br />        
+			<button onclick="check();">Verifica compatibilitÃ </button>
+			<button onclick="readAll();">Leggi tutto</button>
+			<button onclick="deleteAll();">Elimina tutto</button>
+			<br /><br />
+			Chiave: <input type="text" id="storageKey" value="k1" />
+			<button onclick="read();">Leggi</button>        
+			<button onclick="remove();">Elimina</button>
+			<br />
+			Valore: <input type="text" id="storageValue" value="valore da salvare in local storage" />
+			<button onclick="save();">Salva</button>    
+			<br /><br />
+			<button onclick="json();">JSON</button>    
+			<hr />
+			<h3 id="storageName"></h3>
+			<div id="debug"></div>
+		</form>     
+	</article>
+ 	<footer><a href="http://www.html5italia.com/">HTML5Italia.com</a> | <a href="http://books.aspitalia.com/HTML5/">HTML5</a></footer>  
+    
+</body>
+</html>
